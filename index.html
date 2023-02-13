@@ -6,7 +6,7 @@
 <body>
   <script>
     function onClick() {
-      window.parent.postMessage({}, '*');
+      window.parent.postMessage({ event: 'showDialog' }, '*');
     }
   </script>
   <input type="text"/>
