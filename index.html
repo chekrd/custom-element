@@ -4,7 +4,12 @@
   <title>Page Title</title>
 </head>
 <body>
+  <script>
+    function onClick() {
+      window.parent.postMessage({}, '*');
+    }
+  </script>
   <input type="text"/>
-  <button onClick={() => window.parent.postMessage({}, '*')}">Click me</button>
+  <button onclick="onClick()">Click me</button>
 </body>
 </html>
