@@ -5,9 +5,6 @@
 </head>
 <body>
   <input type="text"/>
-  <button onClick="">Click me</button>
-  <script type="text/javascript">
-    window.parent.postMessage({}, '*');
-  </script>
+  <button onClick={() => window.parent.postMessage({}, '*')}">Click me</button>
 </body>
 </html>
